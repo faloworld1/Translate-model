@@ -1,0 +1,28 @@
+[project]
+name = "proj_trans"
+version = "0.1.0"
+description = "Projet ML généré avec Cookiecutter"
+authors = [
+{ name = "Ibrahima Fa Lo" }
+]
+requires-python = ">= 3.12"
+readme = "README.md"
+dependencies = [
+    "pandas",
+    "numpy",
+    "transformers",
+    "torch",
+    "sacrebleu",
+    "tqdm",
+    "pydantic"
+]
+[tool.setuptools]
+packages = ["src"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "I"]
